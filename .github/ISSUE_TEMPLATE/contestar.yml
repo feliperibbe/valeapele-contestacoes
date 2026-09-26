@@ -1,0 +1,40 @@
+name: Contestar uma ficha
+description: Rótulo transcrito errado, volume errado, preço fora do que a loja mostra, categoria errada. Qualquer pessoa, marca ou loja pode abrir.
+title: "Contestar: "
+labels: ["contestacao"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tudo o que você escrever aqui fica público. Obrigado por conferir. A revisão compara o registro com a página da loja e com o rótulo. Se procede, o próximo build corrige a ficha. A versão e o hash da rubrica usada aparecem no rodapé da ficha; não precisa copiar.
+        Este site não faz alegação sobre o que um produto faz na pele: contestação é sobre o que está registrado (ingredientes, volume, preço, categoria), não sobre efeito.
+  - type: input
+    id: url_ficha
+    attributes:
+      label: URL da ficha
+      description: O endereço da página do produto neste site (começa com /produto/).
+      placeholder: https://valeapele.ribbe.workers.dev/produto/marca-nome-30ml/
+    validations:
+      required: true
+  - type: textarea
+    id: o_que_esta_errado
+    attributes:
+      label: O que está errado
+      description: Diga o campo (lista de ingredientes, volume, preço, categoria, marca, nome) e o que deveria ser.
+      placeholder: "O volume na ficha é 30 ml, mas a embalagem é 50 ml."
+    validations:
+      required: true
+  - type: textarea
+    id: fonte_evidencia
+    attributes:
+      label: Fonte ou evidência
+      description: Link da página da loja, foto do rótulo ou outra prova que dê para conferir. Não envie dado pessoal.
+    validations:
+      required: true
+  - type: input
+    id: contato
+    attributes:
+      label: Contato (opcional)
+      description: Fica público, como o resto desta página. Se for marca ou loja, diga qual. Não coloque e-mail ou telefone pessoal.
+    validations:
+      required: false
