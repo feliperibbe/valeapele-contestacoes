@@ -13,7 +13,7 @@ body:
     attributes:
       label: URL da ficha
       description: O endereço da página do produto neste site (começa com /produto/).
-      placeholder: https://valeapele.ribbe.workers.dev/produto/marca-nome-30ml/
+      placeholder: https://valeapele.com.br/produto/marca-nome-30ml/
     validations:
       required: true
   - type: textarea
