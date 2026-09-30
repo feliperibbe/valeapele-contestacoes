@@ -8,6 +8,7 @@ body:
       value: |
         Tudo o que você escrever aqui fica público. Obrigado por conferir. A revisão compara o registro com a página da loja e com o rótulo. Se procede, o próximo build corrige a ficha. A versão e o hash da rubrica usada aparecem no rodapé da ficha; não precisa copiar.
         Este site não faz alegação sobre o que um produto faz na pele: contestação é sobre o que está registrado (ingredientes, volume, preço, categoria), não sobre efeito.
+        Prefere não tratar o assunto em público? Escreva para contato@valeapele.com.br.
   - type: input
     id: url_ficha
     attributes:
